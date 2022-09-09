@@ -13,6 +13,7 @@ import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { clusterApiUrl } from '@solana/web3.js';
 import { MetaplexProvider } from './MetaplexProvider';
 import Nfts from './Nfts';
+import { Grid } from '@mui/material';
 
 const Home: FC = () => {
     const solNetwork = WalletAdapterNetwork.Devnet;
@@ -24,8 +25,20 @@ const Home: FC = () => {
             <WalletProvider wallets={wallets}>
                 <WalletModalProvider>
                     <MetaplexProvider>
-                        <WalletMultiButton />
-                        <Nfts />
+                        <Grid
+                            sx={{
+                                minHeight: '100vh',
+                                padding: '4rem 0',
+                                flex: 1,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyCntent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <WalletMultiButton />
+                            <Nfts />
+                        </Grid>
                     </MetaplexProvider>
                 </WalletModalProvider>
             </WalletProvider>
