@@ -1,5 +1,5 @@
 import { useMetaplex } from './useMetaplex';
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useWallet } from '@solana/wallet-adapter-react';
 
 import Card from '@mui/material/Card';
@@ -21,7 +21,7 @@ interface NftMetaData {
     [x: string | number | symbol]: unknown;
 }
 
-const Nfts = () => {
+const Nfts: FC = () => {
     const [loading, setLoading] = useState(true);
     const [nfts, setNfts] = useState<Nft[]>([]);
     const { metaplex } = useMetaplex();
