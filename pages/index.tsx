@@ -34,8 +34,7 @@ const Home: FC = () => {
                                 flexDirection: 'column',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                background:
-                                    'linear-gradient(to bottom, #000000, #434343)',
+                                background: '#202020',
                             }}
                         >
                             <WalletMultiButton />
