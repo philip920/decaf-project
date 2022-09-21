@@ -6,4 +6,4 @@ A simple dapp that displays all NFT's a user holds in his Phantom wallet.
 4. click "Connect"
 5. admire your NFT's :)
 
-![decaf_project](https://user-images.githubusercontent.com/48444166/189494040-cbcb29d7-9124-4269-b214-75a3ef5c0312.png)
+![sol_nfts](https://user-images.githubusercontent.com/48444166/191619779-07a332ec-5ce0-4daa-9bf6-a54597723096.png)
